@@ -25,3 +25,9 @@ console.log(5 === "5");
 // Can you tell me the two outputs?
 //Answer: 5 == "5" → true because == does type conversion.
 //5 === "5" → false because === checks both value and type (number vs string).
+
+
+let age = 20;
+console.log(age > 18 && age < 25);
+// Will it print true or false?
+// Answer : true
