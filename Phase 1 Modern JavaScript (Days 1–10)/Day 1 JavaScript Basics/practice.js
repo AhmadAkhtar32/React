@@ -7,3 +7,4 @@ console.log(a + b)
 //Q2 : Find the datatype of Q1
 
 console.log(typeof(a+b))
+
