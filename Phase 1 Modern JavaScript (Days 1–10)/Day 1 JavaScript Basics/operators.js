@@ -26,3 +26,12 @@ c *= 10
 
 //Comparison operators 
 
+let x = 23
+let z = 32
+
+console.log (x == z)
+console.log (x != z)
+console.log (x === z)      // Also compares Data-type ! 
+
+
+// Logical operators
