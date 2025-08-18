@@ -13,4 +13,6 @@ console.log(a);     //This defines that let is block-scoped
 // Constant Can't be changed 
 
 const b = "Ahsan "
-console.log (b)
+console.log(b)
+
+// Always try not to use var , use let and const if variable value have not to be chnaged
