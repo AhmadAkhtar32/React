@@ -16,3 +16,9 @@ console.log(typeof d)
 
 // Objecst are Key-Value pairs (Non-primitive data-type)
 
+const item={
+  "Car" : "Toyota",
+  "House": "Furnished",
+  "Rent" : "Luxury"
+}
+console.log(item["Car"])
