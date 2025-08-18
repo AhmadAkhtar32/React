@@ -35,3 +35,8 @@ console.log (x === z)      // Also compares Data-type !
 
 
 // Logical operators
+let v = 5
+let u = 6
+console.log ( v<u && v==5)   //AND Operator
+console.log ( v<u || u<5)    // OR Operator
+console.log (!( v<u ))      //Not (Flips the value)
