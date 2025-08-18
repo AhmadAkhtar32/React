@@ -8,3 +8,20 @@ console.log(a + b)
 
 console.log(typeof(a+b))
 
+let x;
+console.log(x);
+//Is the output null, undefined, 0, or an error?
+//Answer = Undefined
+
+let score = 10;
+score = 15;
+const pi = 3.14;
+pi = 3.14159;
+// Which line will cause an error, and why?
+//Answer :  The 4th line (pi = 3.14159;) will cause an error because const variables cannot be reassigned after their first value is set.
+
+console.log(5 == "5");
+console.log(5 === "5");
+// Can you tell me the two outputs?
+//Answer: 5 == "5" → true because == does type conversion.
+//5 === "5" → false because === checks both value and type (number vs string).
