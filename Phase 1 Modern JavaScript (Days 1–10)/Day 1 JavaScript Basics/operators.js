@@ -2,4 +2,27 @@
 
 // Expression can be a value that we can assign to a variable
 
-// For computation in a program we use Operators 
+// For computation in a program we use Operators
+
+//Arithmetic Operators used for basic mathematical operations
+a = 45
+b = 4
+console.log("A + B = ", a + b)
+console.log("A - B = ", a - b)
+console.log("A * B = ", a * b)
+console.log("A / B = ", a / b)
+console.log("A % B = ", a % b)
+console.log("A ** B = ", a ** b)   // Will take 4 as a power of 45
+console.log("++a: ", ++a)       //First increment then print
+console.log("a++", a++)         //increment After printing the value
+console.log(a)                  //Final value
+
+
+//Assignment Operators
+
+c = 10 
+c += 10   // add 1 to the value
+c *= 10  
+
+//Comparison operators 
+
