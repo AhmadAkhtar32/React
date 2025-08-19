@@ -9,3 +9,11 @@ const mul= () => {
     console.log ( "Arrow function")
 }
 mul();
+// Arrow function with Multiple parameters
+
+const multiply = (a,b,c) =>  {
+    return a*b*c;
+}
+
+console.log(multiply(2,3,4))
+
