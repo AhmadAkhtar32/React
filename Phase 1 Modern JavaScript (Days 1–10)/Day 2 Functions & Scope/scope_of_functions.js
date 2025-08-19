@@ -24,4 +24,15 @@ function hehe(name){
 }
 console.log(hehe("Ahsan"))
 
-//
+/*Block Scope: A block is anything inside { } (loops, if statements, functions, etc.).
+let and const → block-scoped.
+var → function-scoped, so it ignores block boundaries.*/
+
+if (true){
+    var x=10;
+    let y=20;
+    const z=30;
+    console.log(y)
+    console.log(z)
+}
+console.log(x) //only x will be called 
