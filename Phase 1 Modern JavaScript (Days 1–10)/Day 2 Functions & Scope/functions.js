@@ -11,3 +11,12 @@ function add() {
 }
 
 console.log(add()); // 5
+
+
+// Function with Parameters and Arguments
+
+function greet(name){
+    return "Hello " + name;
+}
+
+console.log(greet("Ahsan "));
