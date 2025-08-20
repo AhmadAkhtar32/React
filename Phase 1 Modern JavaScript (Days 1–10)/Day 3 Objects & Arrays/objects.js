@@ -5,12 +5,12 @@ Properties: color, brand, speed.
 Methods: start(), stop(), honk().
  */
 
-const mySym = Symbol("Key1")
+const mySym = Symbol("Key1")         //declaring a symbol
 
 const bike ={ 
     company: "United",
     Model : 2025,
-    [mySym]: "My Key1",
+    [mySym]: "My Key1",              //assigning a value to symbol
     Color : "Black",
     "Engine P" : "150cc",
     owner: "Ahmad A"
@@ -18,4 +18,4 @@ const bike ={
 
 console.log(bike.owner)
 console.log(bike["Engine P"])
-console.log(bike[mySym])
+console.log(bike[mySym])            //calling the value of symbol
