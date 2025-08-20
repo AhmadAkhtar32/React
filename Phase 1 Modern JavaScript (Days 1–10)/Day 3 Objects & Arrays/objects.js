@@ -19,3 +19,7 @@ const bike ={
 console.log(bike.owner)
 console.log(bike["Engine P"])
 console.log(bike[mySym])            //calling the value of symbol
+
+bike.speed = "140km/hr"              // adding a new property
+
+console.log(bike)
