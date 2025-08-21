@@ -15,5 +15,17 @@ const copy = [...arr1]
 console.log(copy)
 
 // Pass Array element as function argument
-
 Math.max(...arr1)
+
+
+/*Rest Operator
+The rest operator collects multiple elements into an array or object. */
+
+// Collect remaining arguments
+function sum(first, ...numbers) {
+  console.log(first); // 1
+  console.log(numbers); // [2, 3, 4, 5]
+  return numbers.reduce((acc, num) => acc + num, first);
+}
+
+sum(1, 2, 3, 4, 5);
