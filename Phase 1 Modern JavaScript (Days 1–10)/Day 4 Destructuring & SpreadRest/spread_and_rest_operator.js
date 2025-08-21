@@ -4,11 +4,11 @@
 The spread operator expands or "spreads out" elements from arrays, objects, or other iterables. */
 
 // Combine Two Arrays
-arr1 = [1,2,3]
-arr2 = [4,5,6]
+arr1 = [1, 2, 3]
+arr2 = [4, 5, 6]
 
 const combined = [...arr1, ...arr2]
-console.log(combined)     
+console.log(combined)
 
 // Copy An Array
 const copy = [...arr1]
@@ -23,9 +23,23 @@ The rest operator collects multiple elements into an array or object. */
 
 // Collect remaining arguments
 function sum(first, ...numbers) {
-  console.log(first); // 1
-  console.log(numbers); // [2, 3, 4, 5]
-  return numbers.reduce((acc, num) => acc + num, first);
+    console.log(first); // 1
+    console.log(numbers); // [2, 3, 4, 5]
+    return numbers.reduce((acc, num) => acc + num, first);
 }
 
 sum(1, 2, 3, 4, 5);
+
+
+/*Key Differences
+Spread: Expands/unpacks elements
+
+Used on the right side of assignments
+Used in function calls
+Used in array/object literals
+
+Rest: Collects/packs elements
+
+Used on the left side of assignments
+Used in function parameter lists
+Must be the last element when destructuring */
