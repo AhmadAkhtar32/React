@@ -1,0 +1,1 @@
+//Template literals (also called template strings) are a powerful string feature in JavaScript that use backticks (`) instead of regular quotes. They provide a more flexible way to create and format strings.
