@@ -15,3 +15,21 @@ function fetchUsers(options, callback) {
 
   if (callback) callback(result);
 }
+
+
+// After 
+function fetchUsers(
+  { limit = 10, activeOnly = false } = {}, // ✅ default params + destructuring
+  callback
+) {
+  const users = [{ id: 1, name: "Ali", active: true }, { id: 2, name: "Sara", active: false }];
+  const out = [];
+
+  for (const u of users) {               // ✅ for...of for values
+    if (activeOnly && !u.active) continue;
+    out.push(u);
+    if (out.length >= limit) break;
+  }
+
+  callback?.(out);                        // ✅ optional chaining call
+}
