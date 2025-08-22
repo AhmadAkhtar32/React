@@ -1,0 +1,1 @@
+// Default parameters let you set a fallback value when a caller passes undefined or omits the argument.
