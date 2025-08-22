@@ -1,0 +1,1 @@
+//Return the right-hand side only if the left-hand side is null or undefined.
