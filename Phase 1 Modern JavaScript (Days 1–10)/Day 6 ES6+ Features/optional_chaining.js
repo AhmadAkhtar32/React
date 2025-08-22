@@ -1,0 +1,1 @@
+//Safely access deep properties/calls without crashing if something is null or undefined.
