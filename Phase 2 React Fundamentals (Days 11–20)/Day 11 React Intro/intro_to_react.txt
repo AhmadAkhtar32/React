@@ -34,3 +34,19 @@ React finds out what changes have been made, and changes only what needs to be c
 The Container
 React uses a container to render HTML in a web page.
 Typically, this container is a <div id="root"></div> element in the index.html file.
+
+
+The render Method
+Did you notice the render method?
+The render method defines what to render in the HTML container.
+The result is displayed in the <div id="root"> element.
+
+Example:
+Display a paragraph inside the "root" element:
+
+main.jsx
+import { createRoot } from 'react-dom/client'
+
+createRoot(document.getElementById('root')).render(
+  <p>Welcome!</p>
+) 
