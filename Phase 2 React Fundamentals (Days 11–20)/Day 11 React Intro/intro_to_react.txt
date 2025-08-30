@@ -89,3 +89,6 @@ Expressions
 You can insert any valid JavaScript expression inside JSX by wrapping it in curly braces { }.
 React will evaluate the expression and render the result in the DOM.
 
+
+Variables
+Variables are also valid expressions. Insert variables in JSX by wrapping it in curly braces { }.
