@@ -96,3 +96,21 @@ Variables are also valid expressions. Insert variables in JSX by wrapping it in 
 
 Function Calls
 Function calls are valid expressions. Insert function calls in JSX by wrapping it in curly braces { }.
+
+
+Object Properties
+Access object properties within JSX:
+Example:
+Refer to an object property inside JSX:
+function Car() {
+  const myobj = {
+    name: "Fiat",
+    model: "500",
+    color: "white"
+  };
+  return (
+    <>
+      <h1>My car is a {myobj.color} {myobj.name} {myobj.model}</h1>
+    </>
+  );
+}
