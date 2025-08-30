@@ -92,3 +92,7 @@ React will evaluate the expression and render the result in the DOM.
 
 Variables
 Variables are also valid expressions. Insert variables in JSX by wrapping it in curly braces { }.
+
+
+Function Calls
+Function calls are valid expressions. Insert function calls in JSX by wrapping it in curly braces { }.
