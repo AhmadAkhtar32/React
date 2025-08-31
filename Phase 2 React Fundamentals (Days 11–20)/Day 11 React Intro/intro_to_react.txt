@@ -166,3 +166,26 @@ Example:
 Boolean true in JSX, this will make the button disabled:
 
 <button onClick={myfunc} disabled>Click me</button>
+
+
+
+
+The style Attribute
+The style attribute in JSX only accepts a JavaScript object with camelCased CSS property names, rather than a CSS string (as in HTML).
+
+Example
+Use the style attribute:
+
+function Car() {
+  const mystyles = {
+    color: "red",
+    fontSize: "20px",
+    backgroundColor: "lightyellow",
+  };
+
+  return (
+    <>
+      <h1 style={mystyles}>My car</h1>
+    </>
+  );
+}
