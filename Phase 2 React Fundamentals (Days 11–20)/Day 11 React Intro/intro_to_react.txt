@@ -218,3 +218,19 @@ React Components
 Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
 Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+
+
+Create Your First Component
+When creating a React component, the component's name MUST start with an upper case letter.
+
+React components returns HTML code.
+
+ExampleGet your own React.js Server
+Create a Function component called Car
+
+function Car() {
+  return (
+    <h2>Hi, I am a Car!</h2>
+  );
+}
