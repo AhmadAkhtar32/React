@@ -248,3 +248,25 @@ Display the Car component in the "root" element:
 createRoot(document.getElementById('root')).render(
   <Car />
 )
+
+
+
+Props
+Arguments can be passed into a component as props, which stands for properties.
+
+You send the arguments into the component as HTML attributes.
+
+You will learn more about props in our React Props chapter.
+
+Example:
+Use an attribute to pass a color to the Car component, and use it in the render function:
+
+function Car(props) {
+  return (
+    <h2>I am a {props.color} Car!</h2>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Car color="red"/>
+);
