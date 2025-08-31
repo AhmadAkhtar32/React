@@ -189,3 +189,26 @@ function Car() {
     </>
   );
 }
+
+
+Conditions - if statements
+React supports if statements, but not inside JSX.
+
+To be able to use conditional statements in JSX, you should put the if statements outside of the JSX, or you could use a ternary expression instead:
+
+Option 1:
+Write if statements outside of the JSX code:
+ExampleGet your own React.js Server
+Write "Banana" if x is less than 10, otherwise "Apple":
+
+function Fruit() {
+  const x = 5;
+  let y = "Apple";
+  if (x < 10) {
+    y = "Banana";
+  }
+
+  return (
+    <h1>{y}</h1>
+  );
+}
