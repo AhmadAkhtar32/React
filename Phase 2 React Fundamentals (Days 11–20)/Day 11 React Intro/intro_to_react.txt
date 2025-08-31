@@ -234,3 +234,17 @@ function Car() {
     <h2>Hi, I am a Car!</h2>
   );
 }
+
+
+
+Rendering a Component
+Now your React application has a component called Car, which returns an <h2> element.
+
+To use this component in your application, refer to it like this: <Car />
+
+Example:
+Display the Car component in the "root" element:
+
+createRoot(document.getElementById('root')).render(
+  <Car />
+)
