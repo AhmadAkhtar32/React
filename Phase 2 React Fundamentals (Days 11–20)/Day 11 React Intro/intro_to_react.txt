@@ -156,3 +156,13 @@ function Car() {
     <button onClick={myfunc}>Click me</button>
   );
 }
+
+
+
+Boolean Attributes
+If you pass no value for an attribute, JSX treats it as true. To pass false, you must specify it as an expression.
+
+Example:
+Boolean true in JSX, this will make the button disabled:
+
+<button onClick={myfunc} disabled>Click me</button>
