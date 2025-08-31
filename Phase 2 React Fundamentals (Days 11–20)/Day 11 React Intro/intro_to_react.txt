@@ -123,3 +123,18 @@ class = className
 The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
 
 JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
+
+
+
+Expressions as Attributes
+You can also use JavaScript expressions as attribute values. This is very useful for dynamic attributes.
+
+Example
+Use JavaScript expressions as attribute values:
+
+function Car() {
+  const x = "myclass";
+  return (
+    <h1 className={x}>Hello World</h1>
+  );
+}
