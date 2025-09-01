@@ -447,3 +447,21 @@ class Car extends React.Component {
 createRoot(document.getElementById('root')).render(
   <Car color="red"/>
 );
+
+
+Props in the Constructor
+If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.
+
+Example
+class Car extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <h2>I am a {this.props.model}!</h2>;
+  }
+}
+
+createRoot(document.getElementById('root')).render(
+  <Car model="Mustang"/>
+);
