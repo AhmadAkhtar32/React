@@ -1098,3 +1098,23 @@ function Car({color}) {
 createRoot(document.getElementById('root')).render(
   <Car brand="Ford" model="Mustang" color="red" year={1969} />
 );
+
+
+Destructuring ...rest
+When you don't know how many properties you will receive, you can use the ...rest operator.
+
+Meaning: you can specify the properties you need, and the rest will be stored in an object.
+
+Example
+The component specifies the color and the brand, but the rest is stored in an object like this:
+{ model: "Mustang", year: 1969 }.
+
+function Car({color, brand, ...rest}) {
+  return (
+    <h2>My {brand} {rest.model} is {color}!</h2>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Car brand="Ford" model="Mustang" color="red" year={1969} />
+);
