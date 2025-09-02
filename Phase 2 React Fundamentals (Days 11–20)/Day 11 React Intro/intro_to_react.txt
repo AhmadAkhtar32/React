@@ -1302,3 +1302,30 @@ function Football() {
 createRoot(document.getElementById('root')).render(
   <Football />
 );
+
+
+React Event Object
+Event handlers have access to the React event that triggered the function.
+
+In our example the event is the "click" event.
+
+Example:
+Arrow Function: Sending the event object manually:
+
+function Football() {
+  const shoot = (a, b) => {
+    alert(b.type);
+    /*
+    'b' represents the React event that triggered the function,
+    in this case the 'click' event
+    */
+  }
+
+  return (
+    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Football />
+);
