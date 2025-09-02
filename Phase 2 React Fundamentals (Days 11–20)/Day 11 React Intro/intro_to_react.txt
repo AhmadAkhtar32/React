@@ -1383,3 +1383,25 @@ function Car(props) {
 createRoot(document.getElementById('root')).render(
   <Car brand="Ford" />
 );
+
+ernary Operator
+Another way to conditionally render elements is by using a ternary operator.
+
+condition ? true : false
+We will go back to the goal example.
+
+Example:
+Return the MadeGoal component if isGoal is true, otherwise return the MissedGoal component:
+
+function Goal(props) {
+  const isGoal = props.isGoal;
+  return (
+    <>
+      { isGoal ? <MadeGoal/> : <MissedGoal/> }
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Goal isGoal={false} />
+);
