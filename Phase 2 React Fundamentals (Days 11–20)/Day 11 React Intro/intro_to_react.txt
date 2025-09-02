@@ -969,3 +969,27 @@ Add a brand attribute to the Car element:
 createRoot(document.getElementById('root')).render(
   <Car brand="Ford" />
 );
+
+
+Pass Multiple Properties
+You can send as many properties as you want.
+
+Every attribute is sent to the Car component as object properties.
+
+Example
+Send multiple properties to the Car component:
+
+createRoot(document.getElementById('root')).render(
+  <Car brand="Ford" model="Mustang" color="red" />
+);
+
+All properties are received in the Car component inside the props object:
+
+Example
+Use the property values in the Car component:
+
+function Car(props) {
+  return (
+    <h2>I am a {props.color} {props.brand} {props.model}!</h2>
+  );
+}
