@@ -1080,3 +1080,21 @@ function Garage() {
 createRoot(document.getElementById('root')).render(
   <Garage />
 );
+
+
+
+Destructuring Props
+You can limit the properties a component receives by using destructuring.
+
+ExampleGet your own React.js Server
+The component knows it only need the color property, so in the function definition, it only specifies that:
+
+function Car({color}) {
+  return (
+    <h2>My car is {color}!</h2>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Car brand="Ford" model="Mustang" color="red" year={1969} />
+);
