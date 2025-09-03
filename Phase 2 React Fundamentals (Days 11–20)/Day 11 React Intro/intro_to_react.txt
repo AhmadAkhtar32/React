@@ -1405,3 +1405,34 @@ function Goal(props) {
 createRoot(document.getElementById('root')).render(
   <Goal isGoal={false} />
 );
+
+
+
+React Lists
+In React, you will render lists with some type of loop.
+
+The JavaScript map() array method is generally the preferred method.
+
+If you need a refresher on the map() method, check out the ES6 Array map() section.
+
+Example:Get your own React.js Server
+Let's create a simple list using the map() method:
+
+function MyCars() {
+  const cars = ['Ford', 'BMW', 'Audi'];
+  return (
+    <>
+      <h1>My Cars:</h1>
+      <ul>
+        {cars.map((car) => <li>I am a { car }</li>)}
+      </ul>
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <MyCars />
+);
+
+When you run this code in your React environment, it will work but you will receive a warning that there is no "key" provided for the list items.
+
