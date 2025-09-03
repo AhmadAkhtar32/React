@@ -1466,3 +1466,29 @@ function MyCars() {
 createRoot(document.getElementById('root')).render(
   <MyCars />
 );
+
+
+Using Array Index as Keys
+While it's possible to use the array index as a key, it's not recommended unless:
+
+The list is static (won't change)
+The list will never be reordered or filtered
+The items in the list have no IDs
+Example:
+Using array indexes as keys (not recommended for dynamic lists):
+
+function MyCars() {
+  const cars = ['Ford', 'BMW', 'Audi'];
+  return (
+    <>
+      <h1>My Cars:</h1>
+      <ul>
+        {cars.map((car, index) => <li key={index}>I am a { car }</li>)}
+      </ul>
+    </>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <MyCars />
+);
