@@ -1818,3 +1818,18 @@ When refering to input values, we add the name of the state object, inputs, as w
   onChange={handleChange}
 />
 <p>Current values: {inputs.firstname} {inputs.lastname}</p>
+
+
+Initial Values
+To add initial values to the input fields in the example above, add the proper keys and values to the useState object:
+
+Example:
+Use initial values for firstname and lastname:
+
+function MyForm() {
+  const [inputs, setInputs] = useState({
+    firstname: 'John',
+    lastname: 'Doe'
+  });}
+
+  
