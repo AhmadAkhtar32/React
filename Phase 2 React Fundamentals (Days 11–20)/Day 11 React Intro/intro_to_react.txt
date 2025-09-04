@@ -1731,3 +1731,60 @@ function MyForm() {
     </form>
   )
 }
+
+
+React Forms - Multiple Input Fields
+Handling Multiple Inputs
+When you have multiple controlled input fields in a form, you can manage their state either by:
+
+1. Using a separate useState call for each input.
+
+2. Using a single useState call with an object to hold all form field values.
+
+We will use the second approach, as it is more common for forms.
+
+Make sure each input field has a unique name attribute.
+
+Also, when initializing the state, use an object instead of a string. If the input fields have no initial value, use an empty object.
+
+Example:Get your own React.js Server
+Use the useState Hook to manage the input:
+
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+function MyForm() {
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setInputs(values => ({...values, [name]: value}))
+  }
+
+  return (
+    <form>
+      <label>First name:
+      <input 
+        type="text" 
+        name="firstname" 
+        value={inputs.firstname} 
+        onChange={handleChange}
+      />
+      </label>
+      <label>Last name:
+        <input 
+          type="text" 
+          name="lastname" 
+          value={inputs.lastname} 
+          onChange={handleChange}
+        />
+      </label>
+      <p>Current values: {inputs.firstname} {inputs.lastname}</p>
+    </form>
+  )
+}
+
+createRoot(document.getElementById('root')).render(
+  <MyForm />
+);
