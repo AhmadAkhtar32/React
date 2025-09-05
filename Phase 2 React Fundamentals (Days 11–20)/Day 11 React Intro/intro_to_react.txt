@@ -2310,3 +2310,25 @@ function App() {
 createRoot(document.getElementById('root')).render(
   <App />
 );
+
+
+Styling React Using CSS
+There are many ways to style React with CSS, this tutorial will take a closer look at three common ways:
+
+Inline styling
+CSS stylesheets
+CSS Modules
+Inline Styling
+To style an element with the inline style attribute, the value must be a JavaScript object:
+
+Example:Get your own React.js Server
+Insert an object with the styling information:
+
+const Header = () => {
+  return (
+    <>
+      <h1 style={{color: "red"}}>Hello Style!</h1>
+      <p>Add a little style!</p>
+    </>
+  );
+}
