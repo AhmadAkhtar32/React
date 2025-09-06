@@ -3774,3 +3774,5 @@ function Timer() {
 createRoot(document.getElementById('root')).render(
   <Timer />
 );
+
+React useContext Hook
