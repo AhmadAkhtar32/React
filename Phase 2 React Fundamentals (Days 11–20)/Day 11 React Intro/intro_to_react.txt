@@ -4488,3 +4488,13 @@ React Online Compiler
 
 
 React Study Plan
+Introduction
+The React study plan helps you teach your students React step-by-step.
+
+Creating a study plan for React is easy.
+
+You can use a pre-built study plan or customize it.
+
+Students have different skill levels. The study plans can be customized to ensure that everyone is challenged.
+
+Save time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of React to the final exam.
