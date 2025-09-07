@@ -4482,3 +4482,6 @@ We removed the hard-coded URL and replaced it with a url variable that can be pa
 Lastly, we are returning our data from our Hook.
 
 In main.jsx, we are importing our useFetch Hook and utilizing it like any other Hook. This is where we pass in the URL to fetch data from.
+
+
+React Online Compiler
